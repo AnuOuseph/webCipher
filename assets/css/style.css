@@ -59,7 +59,7 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 0px 0;
-  background: #fff;
+  background-color: #fff;
 }
 
 #header.header-scrolled {
@@ -364,18 +364,18 @@ h6 {
   border-radius: 3px;
   transition: 0.5s;
   color: #fff;
-  background: #009cea;
+  background-color: #009cea;
 }
 
 #hero .btn-get-started:hover {
-  background: #008bd1;
+  background-color: #008bd1;
 }
 
 #hero .hero-img {
   text-align: center;
 }
 
-#hero .hero-img img {
+#hero .hero-img .img-fluid {
   width: 70%;
 }
 
