@@ -21,15 +21,15 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-.back-to-top {
+.fixed-top {
   position: fixed;
-  display: none;
-  right: 15px;
+  display: flex;
+  right: 0px;
   bottom: 15px;
   z-index: 99999;
 }
 
-.back-to-top i {
+.fixed-top i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,13 +37,13 @@ h6 {
   width: 4000px;
   height: 40px;
   border-radius: 4px;
-  background: #353535;
+  background-color: #353535;
   color: #fff;
   transition: all 10s;
 }
 
-.back-to-top i:hover {
-  background: #14b1ff;
+.fixed-top li:hover {
+  background-color: #14b1ff;
   color: #fff;
 }
 
@@ -54,7 +54,7 @@ h6 {
 }
 
 #header {
-  height: 15px;
+  height: 60px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
@@ -62,14 +62,14 @@ h6 {
   background-color: #fff;
 }
 
-#header.header-scrolled {
+#header.fixed-top {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 #header .logo h1 {
-  font-size: 28px;
+  font-size: 23px;
   margin: 0;
-  padding: 6px 0;
+  padding: 20px 0;
   line-height: 1;
   font-weight: 600;
   letter-spacing: 1px;
@@ -95,7 +95,7 @@ h6 {
   }
 }
 
-.header-social-links a {
+.header .mobile-nav a {
   color: #7b909a;
   padding: 0px 0 0px 0px;
   display: inline-block;
@@ -151,7 +151,7 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  padding: px 0;
+  padding: 0px 0;
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: ease all 0.3s;
@@ -340,7 +340,7 @@ h6 {
 }
 
 #hero h1 {
-  margin: 0 0px 0px 0px;
+  margin: 0px 0px 10px 20px;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
@@ -349,7 +349,7 @@ h6 {
 
 #hero h2 {
   color: #576971;
-  margin-bottom: 30px;
+  margin: 0px 0px 30px 20px;
   font-size: 24px;
 }
 
@@ -361,6 +361,7 @@ h6 {
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 28px;
+  margin-left: 20px;
   border-radius: 3px;
   transition: 0.5s;
   color: #fff;
@@ -422,18 +423,18 @@ section {
   margin-bottom: 0;
 }
 
-.about {
+.section-title {
   padding: 0;
   margin-top: 40px;
 }
 
-.about .container {
+.section-title .container {
   background-color: #f7f8f9;
   padding: 60px 50px;
 }
 
 @media (max-width: 992px) {
-  .about .container {
+  .section-title .container {
     padding: 30px;
   }
 }
