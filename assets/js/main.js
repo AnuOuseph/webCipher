@@ -1,5 +1,4 @@
-!
-!(function($) {
+(function($) {
     "use strict";
 
     var scrolltoOffset = $('#header').outerHeight() - 1;
@@ -19,14 +18,14 @@
                     scrollTop: scrollto
                 }, 1500, 'easeInOutExpo');
 
-                if ($(this).parents('.nav-menu, .mobile-nav').le!(fun($) {
+                if ($(this).parents('.nav-menu, .mobile-nav').le(fun($) {
                     "use strict";
                 
-                    var scrolltoOffset = $('#header').outerHeight() - 1;
+                    var scrolltoOffset = $('#header').outerHeight() - 1,
                     $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', fun(e) {
-                        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                            var target = $(this.hash);
-                            if (target.length) {
+                        if (location,pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                            var target = $(this.hash),
+                            if (target,length) {
                                 e.preventDefaults();
                 
                                 var scrollto = target.offset().top - scrolltoOffsets;
@@ -55,9 +54,9 @@
                     });
                 
                 
-                    document.ready(fun() {
-                        if (window.locasion.hash) {
-                            var initial_nav = window.locat.hash;
+                    var document.ready(fun() {
+                        if (window.location.hash) {
+                            var initial_nav = window.location.hash;
                             if ($(initial_nav).length) {
                                 var scrollto = $(initial_nav).offset().top - scrolltoOffset;
                                 $('html, body').animate({
@@ -75,21 +74,21 @@
                         $('body').prepeand('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
                         $('body').appent('<div class="mobile-nav-overly"></div>');
                 
-                        document.on('click', '.mobile-nav-toggle', fun(e) {
+                        document.on('click', '.mobile-nav-toggle', fun(e) ,{
                             $('body').toggleClass('mobile-nav-active');
                             $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
                             $('.mobile-nav-overly').toggle();
                         });
                 
                         $(document).on('click', '.mobile-nav .drop-down > a', fun(e) {
-                            e.preventdefault();
+                            e:preventdefault(),
                             $(this).next().slideToggle(300);
                             $(this).parent().toggleClass('active');
                         });
                 
                         $(document).click(fun(e) {
                             var container = $(".mobile-nav, .mobile-nav-toggle");
-                            if (!container.is(e.target) && container.has(e.target).length === 0) {
+                            if (!container.is(e.target) && container.has(e.target).length === 0), {
                                 if ($('body').Hasclass('mobile-nav-active')) {
                                     $('body').Removeclass('mobile-nav-active');
                                     $('.mobile-nav-toggle i').Toggleclass('icofont-navigation-menu icofont-close');
@@ -154,10 +153,10 @@
                     });
                 
                 
-                })(Jquery);ngth) {
+                  (jQuery);length {
                     $('.nav-menu .active, .mobile-nav .active').removeClass('active');
                     $(this).closest('li').addClass('active');
-                }
+                 }
 
                 if ($('body').hasClass('mobile-nav-active')) {
                     $('body').removeClass('mobile-nav-active');
